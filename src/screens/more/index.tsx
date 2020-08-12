@@ -37,7 +37,7 @@ const more: MoreComponentType = (MoreComponentProps) => {
 
 
   useEffect(() => {
-    console.log('more useeffect called...')
+    //console.log('more useeffect called...',MoreComponentProps);
     I18n.locale = 'fr'
     Navigation.mergeOptions(MoreComponentProps.componentId, {
       bottomTab: {
@@ -47,12 +47,7 @@ const more: MoreComponentType = (MoreComponentProps) => {
   }, [login]);
 
   const GotoScreen = (ScreenName: string) => {
-    var title = ''
-    if (ScreenName == 'searchcategory')
-      title = "Shop by category"
-    else
-      title = ScreenName;
-
+    var title = ScreenName
     const options = {
       topBar: {
         visible: false, height: 0,
@@ -189,6 +184,21 @@ const more: MoreComponentType = (MoreComponentProps) => {
     });
   }
 
+  // const gotoprivilege = () => {
+  //   Navigation.push(MoreComponentProps.componentId, {
+  //     component: {
+  //       id: 'privilegeid',
+  //       name: 'privilege',
+  //       options: {
+  //         bottomTabs: {
+  //           visible: false,
+  //           drawBehind: true
+  //         }
+  //       }
+  //     }
+  //   });
+  // }
+
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -210,12 +220,12 @@ const more: MoreComponentType = (MoreComponentProps) => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => { }}  >
+          {/* <TouchableOpacity onPress={gotoprivilege}>
             <View style={styles.rowItem}>
               <SimpleLineIcons name="badge" size={20} color="grey" />
               <SideMenuItem text={I18n.t('more.privilege')}></SideMenuItem>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <TouchableOpacity onPress={gotoService}  >
             <View style={styles.rowItem}>
               <SimpleLineIcons name="earphones-alt" size={20} color="grey" />
@@ -238,6 +248,12 @@ const more: MoreComponentType = (MoreComponentProps) => {
             <View style={styles.rowItem}>
               <Entypo name="shop" size={20} color="grey" />
               <SideMenuItem text='Showroom Locator'></SideMenuItem>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => { GotoScreen('privilege') }}  >
+            <View style={styles.rowItem}>
+            <SimpleLineIcons name="badge" size={20} color="grey" />
+              <SideMenuItem text={I18n.t('more.privilege')}></SideMenuItem>
             </View>
           </TouchableOpacity>
           {/* <TouchableOpacity onPress = {}  >

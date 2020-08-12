@@ -26,4 +26,8 @@ I18n.translations = {
   fr
 };
  
+const currentLocale = I18n.currentLocale();
+
+//console.log('standard',currentLocale.indexOf('en'));
+//const isRTL = currentLocale.indexOf('he') === 0 || currentLocale.indexOf('ar') === 0;
 export default I18n;

@@ -87,6 +87,9 @@ export default {
         remove: 'Remove',
         sort: 'Sort'
     },
+    privilege : {
+    
+    },
     cart: {
         checkout: 'Proceed to Checkout',
         fav: 'WISHLIST',
@@ -99,12 +102,12 @@ export default {
         mywishlist: 'My Wishlist',
         myaccount: 'My Account',
         myorder: 'My Orders',
-        privilege: 'Poorvika Privilege program',
         rewards: 'My Rewards',
         feedback: 'Feedback',
         moresetting: 'More',
         logout: 'Logout',
-        searchcategory: 'searchcategory'
+        searchcategory: 'searchcategory',
+        privilege : 'pvkprivilege'
     },
     login: {
         loginaccount: 'Login your Account',

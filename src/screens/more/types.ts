@@ -16,5 +16,6 @@
  * from Poorvika Systems Incorporated.
  */
 interface MoreComponentProps {phonenumber: string,
-    componentId:string }
+    componentId:string
+}
 type MoreComponentType = NavigationComponent<MoreComponentProps>;

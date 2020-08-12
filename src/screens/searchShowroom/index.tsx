@@ -143,7 +143,7 @@ const searchShowroom: React.FC<Props> = (sideMenuPorps: any) => {
                             </View>
                         </TouchableOpacity>
                     </View>
-                </View>
+                </View>   
             </Card>
         )
     }

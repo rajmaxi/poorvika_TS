@@ -20,7 +20,6 @@ import { Navigation } from "react-native-navigation";
 // Receive screen, componentId, options, passprops as Props
 export const navigatetoscreen = (screen:string,componentId:string, options:any, passprops:any) =>
 {
-    
     return(
         Navigation.push(componentId, {
             component: 
@@ -29,7 +28,6 @@ export const navigatetoscreen = (screen:string,componentId:string, options:any, 
               options: options,
               passProps: passprops
             },
-            
-           })
+          })
     )
 }

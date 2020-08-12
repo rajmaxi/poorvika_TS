@@ -49,6 +49,7 @@ import service from "./screens/searchservice";
 import showroom from "./screens/searchShowroom";
 import Checkout from "screens/checkout"
 import initialize from 'EcommerceApp/src/initialize'
+import privilege from '../src/screens/privilege'
 
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 import { withReduxProvider } from './store/withReduxProvider'
@@ -88,4 +89,5 @@ export function registerScreens() {
     Navigation.registerComponent('initialize', () => gestureHandlerRootHOC(withReduxProvider(initialize)), () => initialize);
     Navigation.registerComponent('service', () => gestureHandlerRootHOC(withReduxProvider(service)), () => service);
     Navigation.registerComponent('showroom', () => gestureHandlerRootHOC(withReduxProvider(showroom)), () => showroom);
+    Navigation.registerComponent('privilege', () => gestureHandlerRootHOC(withReduxProvider(privilege)), () => privilege);
 }

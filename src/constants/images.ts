@@ -27,6 +27,8 @@ const images = {
   specialdeals: require("EcommerceApp/src/images/home/special_deals.png"),
   newarrivals: require("EcommerceApp/src/images/home/newarrivals.png"),
   nocostemi: require("EcommerceApp/src/images/home/nocost_emi.jpg"),
+  smartphone: require("EcommerceApp/src/images/mobiles/smartphones.jpg"),
+  profile: require("EcommerceApp/src/images/privilege/profile.png"),
   basepath: <string>'https://apps2.poorvikamobile.com/image/',
 };
 

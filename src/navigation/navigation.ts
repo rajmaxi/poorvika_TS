@@ -26,7 +26,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 export const goToHome = () => {
     Promise.all([
       SimpleLineIcons.getImageSource('home', 25),
-      FontAwesome.getImageSource('tag', 25),
+      SimpleLineIcons.getImageSource('tag', 25),
       AntDesign.getImageSource('hearto', 25),
       AntDesign.getImageSource('shoppingcart', 25),
       SimpleLineIcons.getImageSource('menu', 25),
@@ -238,7 +238,7 @@ export const goToHome = () => {
               options: {
                 topBar:
                 {
-                  drawBehind: true,
+                  drawBehind: false,
                   visible: false,
                   animate: false
                 }
